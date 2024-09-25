@@ -29,7 +29,7 @@ class FeatureOrigin {
           </select>
         </div>
       </div>
-    `
+    `;
     const type = html.querySelector('.form-group:has(select[name="system.type.subtype"])') ??
       html.querySelector('.form-group:has(select[name="system.type.value"])');
     type.insertAdjacentHTML("afterend", origin);
