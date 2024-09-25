@@ -7,7 +7,7 @@ ___
 
 ###### **Technical Details**
 
-**Scope:** A single html element inserted into item sheets on a render hook, that updates items with (half of) an advancementOrigin flag, which is sufficient to sort it into an advancement based category without having to have it added by an advancement.
+**Scope:** A single HTML element inserted into item sheets on a render hook, that updates items with (half of) an `advancementOrigin` flag, which is sufficient to sort it into an advancement based category without having to have it added by an advancement.
  
 **License:** MIT license.
 
