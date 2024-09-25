@@ -21,11 +21,13 @@ class FeatureOrigin {
     const origins = HandlebarsHelpers.selectOptions(choices, { hash: { selected: current, sort: true } });
     const origin = `
       <div class="form-group">
-        <label>Feature Origin</label>
-        <select name="flags.dnd5e.advancementOrigin">
-          <option></option>
-          ${origins}
-        </select>
+        <label>${game.i18n.localize("FEATUREORIGIN.Label")}</label>
+        <div class="form-fields">
+          <select name="flags.dnd5e.advancementOrigin">
+            <option></option>
+            ${origins}
+          </select>
+        </div>
       </div>
     `
     const type = html.querySelector('.form-group:has(select[name="system.type.subtype"])') ??
