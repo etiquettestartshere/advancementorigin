@@ -1,0 +1,1 @@
+It is my hope that this module will not last long, and the system provides this functionality. If that is not the case, translation contributions would be appreciated.
