@@ -1,5 +1,3 @@
-Hooks.once("init", FeatureOrigin.init);
-
 class FeatureOrigin {
 
   static init() {
@@ -35,3 +33,5 @@ class FeatureOrigin {
     type.insertAdjacentHTML("afterend", origin);
   }
 }
+
+Hooks.once("init", FeatureOrigin.init);
