@@ -50,7 +50,7 @@ jobs:
 
       # Create zip file.
       - name: Create ZIP archive
-        run: zip -r ./module.zip module.json LICENSE scripts/ lang/
+        run: zip -r ./module.zip module.json scripts/ styles/
 
       # Create a release for this specific version.
       - name: Update Release with Files
