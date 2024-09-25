@@ -17,7 +17,7 @@ class FeatureOrigin {
         group: game.i18n.localize(`TYPES.Item.${i.type}`)
       });
       return acc;
-    }, []);
+    }, []).sort((a, b) => a.group.localeCompare(b.group));
     const origins = HandlebarsHelpers.selectOptions(choices, { hash: { selected: current, sort: true } });
     const origin = `
       <div class="form-group">
