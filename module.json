@@ -1,7 +1,7 @@
 {
   "id": "featureorigin",
   "title": "Manual Feature Origin Groups",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "esmodules": [
     "scripts/featureorigin.mjs"
   ],

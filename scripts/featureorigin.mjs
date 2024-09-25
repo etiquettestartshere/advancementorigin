@@ -18,21 +18,21 @@ class FeatureOrigin {
       });
       return acc;
     }, []).sort((a, b) => a.group.localeCompare(b.group));
-    const origins = HandlebarsHelpers.selectOptions(choices, { hash: { selected: current, sort: true } });
-    const origin = `
-      <div class="form-group">
-        <label>${game.i18n.localize("FEATUREORIGIN.Label")}</label>
-        <div class="form-fields">
-          <select name="flags.dnd5e.advancementOrigin">
-            <option></option>
-            ${origins}
-          </select>
-        </div>
-      </div>
-    `;
+    const origins = foundry.applications.fields.createSelectInput({
+      name: "flags.dnd5e.advancementOrigin",
+      options: choices,
+      value: current,
+      blank: "",
+      sort: true
+    });
+    const origin = foundry.applications.fields.createFormGroup({
+      label: "FEATUREORIGIN.Label",
+      localize: true,
+      input: origins
+    });
     const type = html.querySelector('.form-group:has(select[name="system.type.subtype"])') ??
       html.querySelector('.form-group:has(select[name="system.type.value"])');
-    type.insertAdjacentHTML("afterend", origin);
+    type.insertAdjacentElement("afterend", origin);
   }
 }
 
