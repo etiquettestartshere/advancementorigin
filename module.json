@@ -1,0 +1,27 @@
+{
+  "id": "featureorigin",
+  "title": "Manual Feature Origin Groups",
+  "version": "0.0.1",
+  "esmodules": [
+    "scripts/featureorigin.mjs"
+  ],
+  "styles": [
+    "styles/featureorigin.css"
+  ],
+  "flags": {"hotReload": {"extensions": ["css", "json"], "paths": ["styles", "lang"]}},
+  "compatibility": {
+    "minimum": "12",
+    "verified": "12"
+  },
+  "authors": [
+    {
+      "name": "alakshana",
+      "discord": "alakshana",
+      "url": "https://github.com/etiquettestartshere",
+      "flags": {}
+    }
+  ],
+  "url": "https://github.com/etiquettestartshere/featureorigin",
+  "manifest": "https://github.com/etiquettestartshere/featureorigin/releases/latest/download/module.json",
+  "download": "https://github.com/etiquettestartshere/featureorigin/releases/latest/download/module.zip"
+}

@@ -1,0 +1,8 @@
+.dnd5e2.sheet.item {
+  .form-group:has(select[name="flags.dnd5e.advancementOrigin"]) {
+    gap: 2px;
+    label {
+      flex: auto;
+    }
+  }
+}
