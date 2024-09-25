@@ -11,4 +11,4 @@ ___
  
 **License:** MIT license.
 
-**Additional Info:** Thanks to Zhell for the HandlebarsHelpers trick, which came in handy once v12 added `group`.
+**Additional Info:** Thanks to Zhell for the HandlebarsHelpers trick, which came in handy once v12 added `group`, and ChaosOS for golfing it into its current shape.
