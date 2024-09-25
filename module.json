@@ -1,14 +1,19 @@
 {
   "id": "featureorigin",
   "title": "Manual Feature Origin Groups",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "esmodules": [
     "scripts/featureorigin.mjs"
   ],
-  "styles": [
-    "styles/featureorigin.css"
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json",
+      "flags": {}
+    }
   ],
-  "flags": {"hotReload": {"extensions": ["css", "json"], "paths": ["styles", "lang"]}},
+  "flags": {"hotReload": {"extensions": ["json"], "paths": ["lang"]}},
   "compatibility": {
     "minimum": "12",
     "verified": "12"
